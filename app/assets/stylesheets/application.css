@@ -13,3 +13,66 @@
  *= require_tree .
  *= require_self
  */
+
+@font-face {
+    font-family: 'Teddy Bear';
+    font-style: normal;
+    src: local('Teddy Bear'), url('fonts/teddy-bear.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Birch';
+    font-style: normal;
+    src: local('Birch'), url('fonts/birch.ttf') format('truetype');
+}
+
+.header {
+    position: relative;
+    width: 100%
+}
+
+.header_logo {
+    width: 100%
+}
+
+.b-navbar {
+    font-family: arial;
+    font-weight: bold;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+    /* opacity: 0.25; */
+}
+
+.logo {
+    font-family: 'Teddy Bear', arial;
+    font-size: 48px;
+    text-shadow: 4px 4px 4px #aaa;
+}
+
+p {
+    font-family: Birch;
+    font-size: large;
+}
+
+h1 {
+    font-family: 'Teddy Bear', arial;
+    text-shadow: 4px 4px 4px #aaa;
+}
+
+body {
+
+}
+
+#modal-sign-up {
+    background: rgba(50, 12, 2, 0.3);
+}
+
+.modal-body, .modal-header, .modal-footer {
+    background-color: rgba(50, 12, 2, 0.3);
+}
+
+#name, #phone, #date, #mail {
+    font-family: Birch;
+    font-size: medium;
+    font-weight: bold;
+}
