@@ -5,6 +5,7 @@
 
 <%= @page.content(:text).try(:html_safe) %>
 
-{{ name }}
-
 <%= @page.content(:header_img).try(:html_safe) %>
+
+
+<%= image_tag url_to_asset(@page.content(:header_img), :class => 'header_logo') %>
