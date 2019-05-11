@@ -11,7 +11,7 @@
   {
       name:           'header_img',
       title:          'Header_img',
-      partable_type:  'Spina::Image'
+      partable_type:  'Spina::Photo'
                       }]
 
   theme.view_templates = [{
@@ -19,11 +19,23 @@
     title:      'Homepage',
     page_parts: ['header_img', 'text']
   }, {
-    name: 'show',
+    name:         'show',
     title:        'Default',
     description:  'A simple page',
     usage:        'Use for your content',
     page_parts:   ['text']
+  }, {
+    name:         'contacts',
+    title:        'Contacts',
+    description:  'A simple page',
+    usage:        'Use for contacts',
+    page_parts:   ['text']
+  }, {
+      name:         'price',
+      title:        'Price',
+      description:  'A simple page',
+      usage:        'Use for prices',
+      page_parts:   ['text']
   }]
 
   theme.custom_pages = [{

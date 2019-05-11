@@ -5,7 +5,6 @@
 
 <%= @page.content(:text).try(:html_safe) %>
 
-<%= @page.content(:header_img).try(:html_safe) %>
+<%= @page.content(:header_img).try(:file_url) %>
 
 
-<%= image_tag url_to_asset(@page.content(:header_img), :class => 'header_logo') %>
