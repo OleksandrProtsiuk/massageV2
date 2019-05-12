@@ -1,10 +1,48 @@
-<br>
-<h1>StaticPages#index</h1>
-<hr>
-<p>Find me in app/views/static_pages/index.html.erb</p>
 
-<%= @page.content(:text).try(:html_safe) %>
+<section id="greater">
+  <br>
+  <h1 style="text-align: center;"><%= @page.content(:hello_from_us).try(:html_safe) %></h1>
+  <hr class="title-line">
+  <p style="text-align: center;"><%= @page.content(:hello_text) %></p>
+</section>
 
-<%= @page.content(:header_img).try(:file_url) %>
+<section id="carousel">
+  <b-carousel id="carousel-no-animation"
+    style="text-shadow: 0px 0px 2px #000"
+    no-animation
+    interval=1000
+    no-hover-pause=true
+    indicators
+    img-width="1024"
+    img-height="480">
+
+    <b-carousel-slide
+      caption="<%= @page.content(:first_slide) %>"
+      img-src="<%= @page.content(:first_carousel_img_link) %>"
+    ></b-carousel-slide>
+    <b-carousel-slide
+      caption="<%= @page.content(:second_slide) %>"
+      img-src="<%= @page.content(:second_carousel_img_link) %>"
+    ></b-carousel-slide>
+    <b-carousel-slide
+      caption="<%= @page.content(:third_slide) %>"
+      img-src="<%= @page.content(:third_carousel_img_link) %>"
+    ></b-carousel-slide>
+    <b-carousel-slide
+      caption="<%= @page.content(:fourth_slide) %>"
+      img-src="<%= @page.content(:fourth_carousel_img_link) %>"
+    ></b-carousel-slide>
+  </b-carousel>
+</section>
+
+<section id="preferences">
+  <br>
+  <h1 style="text-align: center;"><%= @page.content(:preference_title).try(:html_safe) %></h1>
+  <hr class="title-line">
+  <p style="text-align: center;"><%= @page.content(:preference_text) %></p>
+  <section align="center"><%= render 'layouts/contact_form_main' %></section>
+  <br>
+</section>
+
 
 
