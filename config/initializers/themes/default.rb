@@ -9,15 +9,76 @@
     partable_type:  'Spina::Text'
   },
   {
-      name:           'header_img',
-      title:          'Header_img',
-      partable_type:  'Spina::Photo'
+      name:           'hello_from_us',
+      title:          'Hello from us',
+      partable_type:  'Spina::Line'
+                      },
+  {
+      name:           'hello_text',
+      title:          'Hello text',
+      partable_type:  'Spina::Line'
+                      },
+  {
+      name:           'first_slide',
+      title:          'First slide',
+      partable_type:  'Spina::Line'
+                      },
+  {
+      name:           'first_carousel_img_link',
+      title:          'First carousel img link',
+      partable_type:  'Spina::Line'
+                      },
+  {
+      name:           'second_slide',
+      title:          'Second slide',
+      partable_type:  'Spina::Line'
+                      },
+  {
+      name: 'second_carousel_img_link',
+      title: 'Second carousel img link',
+      partable_type:  'Spina::Line'
+                      },
+  {
+      name:           'third_slide',
+      title:          'Third slide',
+      partable_type:  'Spina::Line'
+  },
+      {
+          name: 'third_carousel_img_link',
+          title: 'Third carousel img link',
+          partable_type:  'Spina::Line'
+      },
+  {
+      name:           'fourth_slide',
+      title:          'Fourth slide',
+      partable_type:  'Spina::Line'
+  },
+      {
+          name: 'fourth_carousel_img_link',
+          title: 'Fourth carousel img link',
+          partable_type:  'Spina::Line'
+      },
+  {
+      name:           'preference_title',
+      title:          'Preference title',
+      partable_type:  'Spina::Line'
+                      },
+  {
+      name:           'preference_text',
+      title:          'Preference text',
+      partable_type:  'Spina::Line'
+
                       }]
 
   theme.view_templates = [{
     name:       'homepage',
     title:      'Homepage',
-    page_parts: ['header_img', 'text']
+    page_parts: ['hello_from_us', 'hello_text',
+                 'first_slide', 'first_carousel_img_link',
+                 'second_slide', 'second_carousel_img_link',
+                 'third_slide', 'third_carousel_img_link',
+                 'fourth_slide', 'fourth_carousel_img_link',
+                 'preference_title', 'preference_text', '']
   }, {
     name:         'show',
     title:        'Default',
