@@ -1,6 +1,63 @@
+<section>
+  <br>
+  <h1 style="text-align: center;">Contacts</h1>
+  <hr class="title-line">
+  <b-container>
+    <b-row>
+      <b-col>
+        <b-row>
+          <b-col>
+            <h5>Call us to get more info:</h5>
+          </b-col>
+          <b-col>
+            <b-link href="tel:111" class="phone-link">111</b-link><br>
+            <b-link href="tel:222" class="phone-link">222</b-link><br>
+            <b-link href="tel:333" class="phone-link">333</b-link><br>
+          </b-col>
+        </b-row>
+      </b-col>
 
-<p>Contacts</p>
+      <b-col>
+        <h5>Call me !..  Call me now !.. </h5>
+      </b-col>
+    </b-row>
+  </b-container>
+</section>
+
+<section id="location">
+  <br>
+  <h3 style="text-align: center;">Location</h3>
+  <hr class="title-line">
+</section>
+
+<section id="persons">
+  <br>
+  <h3 style="text-align: center;">Personal</h3>
+  <hr class="title-line">
+
+  <b-card-group deck>
+    <b-card title="Title" img-src="https://picsum.photos/300/300/?image=41" img-alt="Image" img-top>
+      <b-card-text>
+        This is a wider card with supporting text below as a natural lead-in to additional content.
+        This content is a little bit longer.
+      </b-card-text>
+      <div slot="footer"><small class="text-muted">Last updated 3 mins ago</small></div>
+    </b-card>
+
+    <b-card title="Title" img-src="https://picsum.photos/300/300/?image=41" img-alt="Image" img-top>
+      <b-card-text>
+        This card has supporting text below as a natural lead-in to additional content.
+      </b-card-text>
+      <div slot="footer"><small class="text-muted">Last updated 3 mins ago</small></div>
+    </b-card>
+
+  </b-card-group>
+</section>
+
+
 
 <%= @page.content(:text).try(:html_safe) %>
 
+
+AIzaSyAPeMRi2JR-VHlzbIv5H5-WApus1V7RkGc
 

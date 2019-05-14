@@ -54,7 +54,7 @@ p {
     font-size: large;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Teddy Bear', arial;
     text-shadow: 4px 4px 4px #aaa;
 }
@@ -111,6 +111,18 @@ body {
 
 .footer-link:hover {
     color: rgba(245, 245, 245, 0.7);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.phone-link {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.phone-link:hover {
+    color: rgba(0, 0, 0, 0.3);
     font-weight: bold;
     text-decoration: none;
 }
