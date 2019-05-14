@@ -2,6 +2,26 @@
   <br>
   <h1 style="text-align: center;">Contacts</h1>
   <hr class="title-line">
+
+  <b-container>
+    <b-row>
+      <b-col>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </b-col>
+      <b-col>
+        <iframe width="500" height="300" frameborder="0" style="border:2px;"
+                src="<%= maps %>"
+                allowfullscreen>
+        </iframe>
+      </b-col>
+    </b-row>
+    <b-row>
+        <p></p>
+    </b-row>
+  </b-container>
+
+
+
   <b-container>
     <b-row>
       <b-col>
@@ -10,24 +30,19 @@
             <h5>Call us to get more info:</h5>
           </b-col>
           <b-col>
-            <b-link href="tel:111" class="phone-link">111</b-link><br>
-            <b-link href="tel:222" class="phone-link">222</b-link><br>
-            <b-link href="tel:333" class="phone-link">333</b-link><br>
+            <b-link href="tel:111" class="phone-link">111-111-111</b-link><br>
+            <b-link href="tel:222" class="phone-link">222-222-222</b-link><br>
+            <b-link href="tel:333" class="phone-link">333-333-333</b-link><br>
           </b-col>
         </b-row>
       </b-col>
 
       <b-col>
         <h5>Call me !..  Call me now !.. </h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </b-col>
     </b-row>
   </b-container>
-</section>
-
-<section id="location">
-  <br>
-  <h3 style="text-align: center;">Location</h3>
-  <hr class="title-line">
 </section>
 
 <section id="persons">
@@ -35,29 +50,34 @@
   <h3 style="text-align: center;">Personal</h3>
   <hr class="title-line">
 
-  <b-card-group deck>
-    <b-card title="Title" img-src="https://picsum.photos/300/300/?image=41" img-alt="Image" img-top>
+  <div align="center">
+  <b-card-group deck class="w-75">
+
+    <b-card>
+      <b-card-head>
+        <img src="https://picsum.photos/300/300/?image=41" class="contacts-face" img-alt="Image">
+      </b-card-head>
       <b-card-text>
+        <h4>Helga</h4>
         This is a wider card with supporting text below as a natural lead-in to additional content.
         This content is a little bit longer.
       </b-card-text>
-      <div slot="footer"><small class="text-muted">Last updated 3 mins ago</small></div>
+      <div slot="footer"><small class="phone-link">Записаться на приём к специалисту</small></div>
     </b-card>
 
-    <b-card title="Title" img-src="https://picsum.photos/300/300/?image=41" img-alt="Image" img-top>
+    <b-card>
+      <b-card-head>
+        <img src="https://picsum.photos/300/300/?image=41" class="contacts-face" img-alt="Image">
+      </b-card-head>
       <b-card-text>
-        This card has supporting text below as a natural lead-in to additional content.
+        <h4>Helga</h4>
+        This is a wider card with supporting text below as a natural lead-in to additional content.
+        This content is a little bit longer.
       </b-card-text>
-      <div slot="footer"><small class="text-muted">Last updated 3 mins ago</small></div>
+      <div slot="footer"><small class="phone-link">Записаться на приём к специалисту</small></div>
     </b-card>
 
   </b-card-group>
+  </div>
+  <br>
 </section>
-
-
-
-<%= @page.content(:text).try(:html_safe) %>
-
-
-AIzaSyAPeMRi2JR-VHlzbIv5H5-WApus1V7RkGc
-
