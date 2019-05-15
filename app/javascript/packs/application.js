@@ -27,3 +27,7 @@ new Vue({
 
     }
 });
+
+Vue.component('sign_up_form', {
+
+});
