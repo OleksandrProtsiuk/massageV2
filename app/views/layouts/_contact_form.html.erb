@@ -3,28 +3,33 @@
 
   <b-modal id="modal-sign-up" centered>
 
-    <%= form_with(url: "#{'users_path'}", remoute: true) do |form| %>
+     <hr class="title-line">
+    <sign_up_form>
 
-      <p>Type here your name</p>
-      <b-form-input  name="user[name]" id="name" size="lg" type="text"></b-form-input>
-      <br>
-      <p>Type here your contact phone</p>
-      <b-form-input name="user[phone]" id="phone" size="lg" type="tel"></b-form-input>
-      <br>
-      <p>Type here your e-mail</p>
-      <b-form-input name="user[mail]" id="mail" size="lg" type="mail"></b-form-input>
-      <br>
-      <p>Select time zone</p>
-      <b-form-select name="user[date]" id="date" size="lg" type="date">
-        <option value="day">Day</option>
-        <option value="evening">Evening</option>
-      </b-form-select>
-      <br>
+      <div class="bd-example vue-example vue-example-b-form">
+        <div><form class="">
+          <div id="input-group-1" role="group" class="form-group">
+            <label id="input-group-1__BV_label_" for="input-1" class="d-block">Email address:</label>
+            <div>
+              <input id="input-1" type="email" placeholder="Enter email" required="required" aria-required="true" class="form-control" aria-describedby="input-group-1__BV_description_">
+              <!----><!---->
+              <small tabindex="-1" id="input-group-1__BV_description_" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+          </div>
+          <div id="input-group-2" role="group" class="form-group">
+            <label id="input-group-2__BV_label_" for="input-2" class="d-block">Your Name:</label>
+            <div>
+              <input id="input-2" type="text" placeholder="Enter name" required="required" aria-required="true" class="form-control">
+              <!----><!----><!---->
+            </div>
+          </div>
+          <div id="input-group-3" role="group" class="form-group"><label id="input-group-3__BV_label_" for="input-3" class="d-block">Food:</label><div><select id="input-3" required="required" aria-required="true" class="custom-select"><option value="">Select One</option><option value="Carrots">Carrots</option><option value="Beans">Beans</option><option value="Tomatoes">Tomatoes</option><option value="Corn">Corn</option></select><!----><!----><!----></div></div> <fieldset id="input-group-4" class="form-group"><!----><div tabindex="-1" role="group"><div id="checkboxes-4" role="group" tabindex="-1" class=""><div class="custom-control custom-control-inline custom-checkbox"><input type="checkbox" name="checkboxes-4" autocomplete="off" class="custom-control-input" value="me" id="__BVID__180"><label class="custom-control-label" for="__BVID__180">Check me out</label></div> <div class="custom-control custom-control-inline custom-checkbox"><input type="checkbox" name="checkboxes-4" autocomplete="off" class="custom-control-input" value="that" id="__BVID__181"><label class="custom-control-label" for="__BVID__181">Check that out</label></div></div><!----><!----><!----></div></fieldset> <button type="submit" class="btn btn-primary">Submit</button> <button type="reset" class="btn btn-danger">Reset</button></form> <div class="card mt-3"><!----><div class="card-header"><div>Form Data Result</div></div><div class="card-body"><!----><!----><pre class="m-0">{
+  "email": "",
+  "name": "",
+  "food": null,
+  "checked": []
+}</pre></div><!----><!----></div></div></div>
 
-      <div class="actions">
-        <%= form.submit %>
-      </div>
-    <% end %>
-
+    </sign_up_form>
   </b-modal>
 </div>
