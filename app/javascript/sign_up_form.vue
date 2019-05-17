@@ -1,14 +1,24 @@
 <template>
     <div>
         <b-form @submit="onSubmit" @reset="onReset" v-if="show">
+
+            <b-form-group id="input-group-1" label="Your Name:" label-for="input-1">
+                <b-form-input
+                        id="input-1"
+                        v-model="form.name"
+                        required
+                        placeholder="Enter name"
+                ></b-form-input>
+            </b-form-group>
+
             <b-form-group
-                    id="input-group-1"
+                    id="input-group-2"
                     label="Email address:"
-                    label-for="input-1"
+                    label-for="input-2"
                     description="We'll never share your email with anyone else."
             >
                 <b-form-input
-                        id="input-1"
+                        id="input-2"
                         v-model="form.email"
                         type="email"
                         required
@@ -16,12 +26,12 @@
                 ></b-form-input>
             </b-form-group>
 
-            <b-form-group id="input-group-2" label="Your Name:" label-for="input-2">
+            <b-form-group id="input-group-3" label="Your Phone:" label-for="input-3">
                 <b-form-input
-                        id="input-2"
-                        v-model="form.name"
+                        id="input-3"
+                        v-model="form.phone"
                         required
-                        placeholder="Enter name"
+                        placeholder="Enter phone"
                 ></b-form-input>
             </b-form-group>
 
@@ -37,16 +47,16 @@
         data() {
             return {
                 form: {
-                    email: '',
                     name: '',
-
+                    email: '',
+                    phone: '',
                 },
 
             }
         },
         methods: {
             onSubmit(evt) {
-                evt.preventDefault();
+                evt.preventDefault()
                 alert(JSON.stringify(this.form))
             },
             onReset(evt) {
@@ -54,6 +64,7 @@
                 // Reset our form values
                 this.form.email = '';
                 this.form.name = '';
+                this.form.phone = '';
                 // Trick to reset/clear native browser form validation state
                 this.show = false;
                 this.$nextTick(() => {
