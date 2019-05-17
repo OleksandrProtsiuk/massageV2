@@ -8,19 +8,31 @@
 
       <div class="bd-example vue-example vue-example-b-form">
         <div><form class="">
+
           <div id="input-group-1" role="group" class="form-group">
-            <label id="input-group-1__BV_label_" for="input-1" class="d-block">Email address:</label>
+            <label id="input-group-1__BV_label_" for="input-1" class="d-block">Your Name:</label>
             <div>
-              <input id="input-1" type="email" placeholder="Enter email" required="required" aria-required="true" class="form-control" aria-describedby="input-group-1__BV_description_">
-              <!----><!---->
-              <small tabindex="-1" id="input-group-1__BV_description_" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              <input id="input-1" type="text" placeholder="Enter name"
+                     required="required" aria-required="true" class="form-control">
             </div>
           </div>
+
           <div id="input-group-2" role="group" class="form-group">
-            <label id="input-group-2__BV_label_" for="input-2" class="d-block">Your Name:</label>
+            <label id="input-group-2__BV_label_" for="input-2" class="d-block">Email address:</label>
             <div>
-              <input id="input-2" type="text" placeholder="Enter name" required="required" aria-required="true" class="form-control">
-              <!----><!----><!---->
+              <input id="input-2" type="email" placeholder="Enter email"
+                     required="required" aria-required="true" class="form-control"
+                     aria-describedby="input-group-2__BV_description_">
+              <small tabindex="-1" id="input-group-2__BV_description_"
+                     class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+          </div>
+
+          <div id="input-group-3" role="group" class="form-group">
+            <label id="input-group-3__BV_label_" for="input-3" class="d-block">Your Phone:</label>
+            <div>
+              <input id="input-3" type="tel" placeholder="Enter phone"
+                     required="required" aria-required="true" class="form-control">
             </div>
           </div>
 
