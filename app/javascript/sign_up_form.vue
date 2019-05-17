@@ -76,5 +76,9 @@
 </script>
 
 <style scoped>
-
+    #input-1, #input-2, #input-3 {
+        font-family: Birch;
+        font-size: medium;
+        font-weight: bold;
+    }
 </style>
