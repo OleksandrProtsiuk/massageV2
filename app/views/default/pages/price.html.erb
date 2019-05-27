@@ -1,3 +1,9 @@
 
+<section class="price">
+ <div id="magic">
+   <p>
+     <%= @page.content(:text).try(:html_safe) %>
+   </p>
+ </div>
+</section>
 
-<%= @page.content(:text).try(:html_safe) %>
