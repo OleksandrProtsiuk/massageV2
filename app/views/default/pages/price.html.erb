@@ -1,4 +1,10 @@
 
+<% if @page.content(:discount) %>
+  <section class="discount">
+    <%= @page.content(:discount) %>
+  </section>
+<% end %>
+
 <section class="price">
  <div id="magic">
    <p>
@@ -6,4 +12,3 @@
    </p>
  </div>
 </section>
-
