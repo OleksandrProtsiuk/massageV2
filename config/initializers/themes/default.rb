@@ -68,6 +68,12 @@
       title:          'Preference text',
       partable_type:  'Spina::Line'
 
+                      },
+  {
+      name:           'discount',
+      title:          'Discount',
+      partable_type:  'Spina::Line'
+
                       }]
 
   theme.view_templates = [{
@@ -96,7 +102,7 @@
       title:        'Price',
       description:  'A simple page',
       usage:        'Use for prices',
-      page_parts:   ['text']
+      page_parts:   ['discount', 'text', '']
   }]
 
   theme.custom_pages = [{
