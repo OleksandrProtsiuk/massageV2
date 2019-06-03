@@ -145,3 +145,12 @@ body {
 .contacts-face:hover {
     border-radius: 3px;
 }
+
+#discount {
+    border: 0 solid #ddd;
+    background-color: rgba(255, 83, 112, 0.7);
+}
+
+#discount-card {
+    border: 0 solid #ddd;
+}

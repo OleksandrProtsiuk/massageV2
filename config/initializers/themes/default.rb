@@ -72,7 +72,7 @@
   {
       name:           'discount',
       title:          'Discount',
-      partable_type:  'Spina::Line'
+      partable_type:  'Spina::Text'
 
                       }]
 
