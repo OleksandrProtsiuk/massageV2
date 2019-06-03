@@ -1,7 +1,19 @@
 
+<br>
 <% if @page.content(:discount) %>
   <section class="discount">
-    <%= @page.content(:discount) %>
+
+    <b-card no-body class="mb-1" id="discount-card">
+      <b-card-header header-tag="header" class="p-1" role="tab" id="discount-card">
+        <b-button block href="#" v-b-toggle.accordion id="discount"><h3>Discount</h3></b-button>
+      </b-card-header>
+      <b-collapse id="accordion" accordion="my-accordion" role="tabpanel">
+        <b-card-body>
+          <b-card-text><%= @page.content(:discount) %></b-card-text>
+        </b-card-body>
+      </b-collapse>
+    </b-card>
+
   </section>
 <% end %>
 
